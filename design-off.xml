@@ -26,6 +26,13 @@
 
 <MOVERS>
 
+  #AddOrRemoveMatchCsts name="&string" cst_instruction=( "void", "&string") cstfile="&string" keep_covalent=(0 &bool) accept_blocks_missing_header=(0 &bool) fail_on_constraints_missing=(1 &bool)/>
+  
+  <AddOrRemoveMatchCsts name=enzdes-cst
+    cst_instruction=add_new
+    cstfile=enzdes.cst
+  />
+
   <ConstraintSetMover name=addcst 
     add_constraints=true 
     cst_file=fe.cst 
