@@ -1,7 +1,5 @@
 #$ -cwd
-#$ -S /bin/bash
-$( echo "#$ -N testing" ) 
-$( echo "#$ -t 1-$#" )
+#$ -S /bin/bash 
 #$ -e logs
 #$ -o logs
 
@@ -14,5 +12,5 @@ export PATH=/home/carlin/Rosetta/main/source/bin:$PATH
 export ROSETTA3_DB=/home/carlin/Rosetta/main/database
 
 rosetta_scripts.linuxgccrelease --parser:protocol design-off.xml \
-  @enzdes.flags -s ${my[${SGE_TASK_ID}]}
+  @enzdes.flags -s $1 
 
