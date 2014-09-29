@@ -13,7 +13,7 @@
 -packing::ex2aro
 -packing::extrachi_cutoff 1
 -packing::use_input_sc
--packing::unboundrot tom-v106f.pdb
+-packing::unboundrot tomo-wt.pdb
 -packing::flip_HNQ
 -packing::no_optH false
 -packing::optH_MCA false
